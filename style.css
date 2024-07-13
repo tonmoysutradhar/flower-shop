@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* flower homepage style */
+
+.flower-homepage {
+  max-width: 1920px;
+  min-height: 850px;
+  margin: 0 auto;
+  background: rgba(229, 84, 115, 0.1);
+}
+.flower-content {
+  display: flex;
+  gap: 97px;
+  align-items: center;
+  padding: 50px 240px 0px 240px;
+}
+.flowers-text h1 {
+  color: rgb(39, 39, 39);
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 96px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.flowers-text p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 634px;
+  margin-bottom: 32px;
+}
+.flowers-text button {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 43px 20px 43px;
+  border-radius: 8px;
+  background: rgb(229, 84, 115);
+  border: none;
+}
+
+/* responsive style  */
+
+@media screen and (max-width: 576px) {
+  /* flower homepage style */
+  .flower-content {
+    flex-direction: column;
+    padding: 0;
+    align-items: normal;
+    text-align: center;
+  }
+  .flowers-text p,
+  .flowers-image img {
+    width: 100%;
+  }
+  .flowers-text h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
