@@ -169,7 +169,10 @@ header {
     gap: 1rem;
     padding: 5rem 3rem;
   }
-  
+  .hot-deal {
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
 }
 
 /* responsive style  for small device*/
@@ -202,4 +205,10 @@ header {
     gap: 2rem;
     flex-direction: column-reverse;
   }
+  /* .hot-deal {
+    gap: 2rem;
+    flex-direction: column-reverse;
+  } */
+  
+
 }
