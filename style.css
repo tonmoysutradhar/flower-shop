@@ -10,12 +10,23 @@ body {
 /* shared style  */
 .common-para {
   color: rgba(39, 39, 39, 0.6);
-  line-height: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
   margin: 0;
+}
+.flowers-btn {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1.25rem 2.7rem;
+  border-radius: 8px;
+  background: rgb(229, 84, 115);
+  border: none;
 }
 
 .flower-content,
-main {
+.part-1,
+.hot-deal {
   width: 85%;
   margin: 0 auto;
 }
@@ -43,13 +54,6 @@ header {
   margin: 0 0 1.7rem 0;
 }
 .flowers-text button {
-  color: white;
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding: 1.25rem 2.7rem;
-  border-radius: 8px;
-  background: rgb(229, 84, 115);
-  border: none;
   margin: 1.7rem 0 0 0;
 }
 .flowers-image img {
@@ -116,6 +120,36 @@ header {
   margin: 1.5rem 0 0 0;
 }
 
+/* Hot Deal ! Sale Up To 25% Off */
+.part-2 {
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(229, 84, 115, 0.05);
+}
+.hot-deal {
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 6.25rem 0;
+}
+.hot-deal-text {
+  max-width: 600px;
+  text-align: center;
+}
+.hot-deal-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 48px;
+  margin: 0;
+}
+.hot-deal-text span {
+  color: rgb(229, 84, 115);
+}
+.hot-deal-text p {
+  margin: 1.5rem 0 2rem 0;
+}
+
 /* responsive style  for medium device*/
 @media screen and (min-width: 576px) and (max-width: 952px) {
   /* flower homepage style */
@@ -135,6 +169,7 @@ header {
     gap: 1rem;
     padding: 5rem 3rem;
   }
+  
 }
 
 /* responsive style  for small device*/
@@ -162,5 +197,9 @@ header {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
     padding: 4rem 3rem;
+  }
+  .hot-deal {
+    gap: 2rem;
+    flex-direction: column-reverse;
   }
 }
