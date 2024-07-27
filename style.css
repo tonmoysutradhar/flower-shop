@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  color: rgb(39, 39, 39);
   margin: 0;
   padding: 0;
 }
@@ -13,15 +14,19 @@ body {
   margin: 0;
 }
 
+.flower-content,
+main {
+  width: 85%;
+  margin: 0 auto;
+}
+
 /* flower homepage style */
-.flower-homepage {
+header {
   width: 100%;
   background: rgba(229, 84, 115, 0.1);
   margin-bottom: 6rem;
 }
 .flower-content {
-  width: 85%;
-  margin: 0 auto;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -32,7 +37,6 @@ body {
   max-width: 600px;
 }
 .flowers-text h1 {
-  color: rgb(39, 39, 39);
   font-size: 4rem;
   font-weight: 800;
   line-height: 5rem;
@@ -53,63 +57,44 @@ body {
 }
 
 /* featured flowers style  */
-
 .featured-flowers-content {
-  width: 594px;
-  height: 132px;
+  max-width: 594px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 2.5rem;
 }
 .featured-flowers-content h2 {
-  color: rgb(39, 39, 39);
-  font-size: 40px;
+  font-size: 2.25rem;
   font-weight: 800;
-  margin: 0 0 24px 0;
+  margin: 0 0 1.25rem 0;
 }
-.featured-flowers-content p {
-  color: rgba(39, 39, 39, 0.6);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-}
+
 .featured-flowers-images {
-  max-width: 1440px;
-  min-height: 605px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  margin-bottom: 128px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 .featured-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 32px;
-  padding: 0;
+  text-align: center;
 }
-.featured-content img {
+.common-img {
+  padding: 5.5rem 4.5rem 0 4.5rem;
   border-radius: 300px 300px 0px 0px;
 }
-.featured-content p {
-  color: rgb(39, 39, 39);
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: underline;
+.featured-content img {
+  width: 100%;
 }
 .img-1 {
   background: rgba(167, 33, 98, 0.15);
-  padding: 110px 78px 0 76px;
 }
 .img-2 {
   background: rgba(5, 151, 160, 0.15);
-  padding: 117px 47px 51px 47px;
 }
-.img-3 {
-  background: rgba(71, 125, 17, 0.15);
-  padding: 67px 75px 0 75px;
+.featured-content p {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 700;
+  margin: 2rem 0 0 0;
 }
 
 /* responsive style  for medium device*/
@@ -119,6 +104,13 @@ body {
     flex-direction: column;
     gap: 2.5rem;
     text-align: center;
+  }
+  .featured-flowers-images {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  .common-img {
+    border-radius: 400px 400px 0px 0px;
   }
 }
 
@@ -136,21 +128,11 @@ body {
     line-height: 3.5rem;
     margin-bottom: 1rem;
   }
-
-  /* featured flowers style  */
-  .featured-flowers-content {
-    width: 100%;
+  .featured-flowers-images {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
   }
-  /* .featured-flowers-images {
-    width: 100%;
-    grid-template-columns: 1fr;
+  .common-img {
+    border-radius: 400px 400px 0px 0px;
   }
-  .featured-flowers {
-    display: grid;
-  }
-  .img-1,
-  .img-2,
-  .img-3 {
-    width: 100%;
-  } */
 }
