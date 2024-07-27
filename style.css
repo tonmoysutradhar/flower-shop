@@ -72,7 +72,7 @@ header {
 .featured-flowers-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 3rem;
 }
 .featured-content {
   text-align: center;
@@ -97,6 +97,25 @@ header {
   margin: 2rem 0 0 0;
 }
 
+/* suport section  */
+.support-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  padding: 6rem 7rem;
+  text-align: center;
+  margin: 6rem 0;
+}
+.support-section p {
+  color: rgba(39, 39, 39, 0.8);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 35px;
+  margin: 1.5rem 0 0 0;
+}
+
 /* responsive style  for medium device*/
 @media screen and (min-width: 576px) and (max-width: 952px) {
   /* flower homepage style */
@@ -111,6 +130,10 @@ header {
   }
   .common-img {
     border-radius: 400px 400px 0px 0px;
+  }
+  .support-section {
+    gap: 1rem;
+    padding: 5rem 3rem;
   }
 }
 
@@ -134,5 +157,10 @@ header {
   }
   .common-img {
     border-radius: 400px 400px 0px 0px;
+  }
+  .support-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 4rem 3rem;
   }
 }
