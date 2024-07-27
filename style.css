@@ -6,62 +6,151 @@ body {
   padding: 0;
 }
 
-/* flower homepage style */
+/* shared style  */
+.common-para {
+  color: rgba(39, 39, 39, 0.6);
+  line-height: 1.6rem;
+  margin: 0;
+}
 
+/* flower homepage style */
 .flower-homepage {
-  max-width: 1920px;
-  min-height: 850px;
-  margin: 0 auto;
+  width: 100%;
   background: rgba(229, 84, 115, 0.1);
+  margin-bottom: 6rem;
 }
 .flower-content {
+  width: 85%;
+  margin: 0 auto;
   display: flex;
-  gap: 97px;
+  gap: 1rem;
+  justify-content: space-between;
   align-items: center;
-  padding: 50px 240px 0px 240px;
+  padding-top: 50px;
+}
+.flowers-text {
+  max-width: 600px;
 }
 .flowers-text h1 {
   color: rgb(39, 39, 39);
-  font-size: 80px;
+  font-size: 4rem;
   font-weight: 800;
-  line-height: 96px;
-  margin-top: 0;
-  margin-bottom: 32px;
+  line-height: 5rem;
+  margin: 0 0 1.7rem 0;
 }
-.flowers-text p {
+.flowers-text button {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1.25rem 2.7rem;
+  border-radius: 8px;
+  background: rgb(229, 84, 115);
+  border: none;
+  margin: 1.7rem 0 0 0;
+}
+.flowers-image img {
+  width: 100%;
+}
+
+/* featured flowers style  */
+
+.featured-flowers-content {
+  width: 594px;
+  height: 132px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.featured-flowers-content h2 {
+  color: rgb(39, 39, 39);
+  font-size: 40px;
+  font-weight: 800;
+  margin: 0 0 24px 0;
+}
+.featured-flowers-content p {
   color: rgba(39, 39, 39, 0.6);
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  width: 634px;
-  margin-bottom: 32px;
 }
-.flowers-text button {
-  color: white;
-  font-size: 20px;
+.featured-flowers-images {
+  max-width: 1440px;
+  min-height: 605px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 128px;
+}
+.featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  padding: 0;
+}
+.featured-content img {
+  border-radius: 300px 300px 0px 0px;
+}
+.featured-content p {
+  color: rgb(39, 39, 39);
+  font-size: 24px;
   font-weight: 700;
-  padding: 20px 43px 20px 43px;
-  border-radius: 8px;
-  background: rgb(229, 84, 115);
-  border: none;
+  text-decoration: underline;
+}
+.img-1 {
+  background: rgba(167, 33, 98, 0.15);
+  padding: 110px 78px 0 76px;
+}
+.img-2 {
+  background: rgba(5, 151, 160, 0.15);
+  padding: 117px 47px 51px 47px;
+}
+.img-3 {
+  background: rgba(71, 125, 17, 0.15);
+  padding: 67px 75px 0 75px;
 }
 
-/* responsive style  */
+/* responsive style  for medium device*/
+@media screen and (min-width: 576px) and (max-width: 952px) {
+  /* flower homepage style */
+  .flower-content {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+}
 
+/* responsive style  for small device*/
 @media screen and (max-width: 576px) {
   /* flower homepage style */
   .flower-content {
     flex-direction: column;
-    padding: 0;
-    align-items: normal;
+    gap: 2rem;
+    padding-top: 1rem;
     text-align: center;
   }
-  .flowers-text p,
-  .flowers-image img {
+  .flowers-text h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* featured flowers style  */
+  .featured-flowers-content {
     width: 100%;
   }
-  .flowers-text h1 {
-    font-size: 40px;
-    line-height: 60px;
+  /* .featured-flowers-images {
+    width: 100%;
+    grid-template-columns: 1fr;
   }
+  .featured-flowers {
+    display: grid;
+  }
+  .img-1,
+  .img-2,
+  .img-3 {
+    width: 100%;
+  } */
 }
