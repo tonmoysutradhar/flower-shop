@@ -175,6 +175,7 @@ span {
   width: 100%;
   border-radius: 8px;
   background: url("./flower-images/rectangle-9.png") no-repeat ;
+  background-size: cover;
   padding: 7.625rem 0;
   text-align: center;
   margin-bottom: 6rem;
