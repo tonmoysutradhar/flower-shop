@@ -168,7 +168,6 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  /* width: 100%; */
 }
 
 /* responsive style  for medium device*/
@@ -193,6 +192,9 @@ header {
   .hot-deal {
     gap: 2rem;
     flex-direction: column-reverse;
+  }
+  .instagram-img {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -225,6 +227,9 @@ header {
   .hot-deal {
     gap: 2rem;
     flex-direction: column-reverse;
+  }
+  .instagram-img {
+    grid-template-columns: repeat(1, 1fr);
   }
 
 
