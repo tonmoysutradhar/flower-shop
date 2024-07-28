@@ -142,7 +142,7 @@ header {
   max-width: 600px;
   text-align: center;
 }
-.hot-deal-text span {
+span {
   color: rgb(229, 84, 115);
 }
 .hot-deal-text p {
@@ -197,6 +197,31 @@ header {
   color: rgba(39, 39, 39, 0.6);
 }
 
+/* footer section  */
+footer {
+  width: 100%;
+  background-color:rgb(17, 16, 16);
+  padding: 6rem 0;
+}
+.footer-section {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer-section h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+.flower-p {
+  color: white;
+  margin: 1.5rem 0 2rem 0;
+}
+.all-right {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
 
 /* responsive style  for medium device*/
 @media screen and (min-width: 576px) and (max-width: 952px) {
